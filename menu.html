@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Discover our full menu including coffee, cakes, and brunch at Local Café." />
+  <meta name="keywords" content="Local Café, Coffee, Brunch, Cakes, Menu, Melbourne Café" />
+  <title>Menu | Local Café</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Local Café</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="menu.html" aria-current="page">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Menu Section -->
+  <div class="container py-5">
+    <h1 class="mb-4 text-center">Our Menu</h1>
+
+    <!-- PDF Download Button -->
+    <div class="text-center mb-5">
+      <a href="menu.pdf" class="btn btn-primary px-4 py-2" download>
+      📄 Download Our Full Menu
+      </a>
+    </div>
+
+    <!-- Coffee Section -->
+    <section id="coffee" class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="images/coffee.jpg" alt="Coffee" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">Coffee</h2>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">Espresso <span>$4.00</span></li>
+            <li class="list-group-item d-flex justify-content-between">Cappuccino <span>$4.50</span></li>
+            <li class="list-group-item d-flex justify-content-between">Latte <span>$4.50</span></li>
+            <li class="list-group-item d-flex justify-content-between">Flat White <span>$4.50</span></li>
+            <li class="list-group-item d-flex justify-content-between">Mocha <span>$5.00</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cakes & Desserts Section -->
+    <section id="cakes" class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2">
+          <img src="images/cakes.jpg" alt="Cakes and Desserts" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h2 class="mb-3">Cakes & Desserts</h2>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">Croissant <span>$3.50</span></li>
+            <li class="list-group-item d-flex justify-content-between">Blueberry Muffin <span>$4.00</span></li>
+            <li class="list-group-item d-flex justify-content-between">Chocolate Cake <span>$5.50</span></li>
+            <li class="list-group-item d-flex justify-content-between">Tiramisu <span>$6.00</span></li>
+            <li class="list-group-item d-flex justify-content-between">Banana Bread <span>$4.00</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brunch Section -->
+    <section id="brunch" class="mb-5">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="images/brunch.jpg" alt="Brunch" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">Brunch</h2>
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">Avocado Toast <span>$8.00</span></li>
+            <li class="list-group-item d-flex justify-content-between">Egg & Bacon Roll <span>$9.50</span></li>
+            <li class="list-group-item d-flex justify-content-between">Grilled Chicken Sandwich <span>$10.00</span></li>
+            <li class="list-group-item d-flex justify-content-between">Veggie Burger <span>$11.00</span></li>
+            <li class="list-group-item d-flex justify-content-between">Salmon Bagel <span>$12.00</span></li>
+            <li class="list-group-item d-flex justify-content-between">Eggs Benedict <span>$12.50</span></li>
+            <li class="list-group-item d-flex justify-content-between">Pancakes with Maple Syrup <span>$10.00</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="pt-3 mt-3">
+    <div class="container">
+      <div class="row text-center text-md-start align-items-start">
+
+        <!-- Opening Hours -->
+        <div class="col-md-4 mb-3 footer-contact-hours">
+          <h5>Opening Hours</h5>
+          <ul class="list-unstyled">
+            <li>Mon - Fri: 7:00 AM - 6:00 PM</li>
+            <li>Sat - Sun: 8:00 AM - 4:00 PM</li>
+          </ul>
+          <p class="mt-2 mb-0"><strong>Phone:</strong> (03) 9876 5432</p>
+        </div>
+
+        <!-- Social Media -->
+<div class="col-md-4 mb-3 text-center footer-get-in-touch">
+  <h5 class="mb-3">Follow Us</h5>
+  <a href="https://www.facebook.com/" class="me-3" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+    <img src="images/facebook.svg" alt="Facebook" width="24" height="24" />
+  </a>
+  <a href="https://www.instagram.com/" class="me-3" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+    <img src="images/instagram.svg" alt="Instagram" width="24" height="24" />
+  </a>
+  <a href="https://www.twitter.com/" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+    <img src="images/twitter.svg" alt="Twitter" width="24" height="24" />
+  </a>
+</div>
+
+        <!-- Location Info -->
+        <div class="col-md-4 mb-3 text-md-end footer-location">
+          <h5>Location</h5>
+          <address>
+            1230 Nepean Hwy,<br />
+            Moorabbin, VIC 3192<br />
+            Australia
+          </address>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center py-3 border-top">
+        © 2025 Local Café. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
