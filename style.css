@@ -1,0 +1,245 @@
+/* ---------- General Font & Body Styling ---------- */
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f0; /* Creamy beige background */
+  color: #5c4631; /* Soft brown text */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html {
+  height: 100%;
+}
+
+/* ---------- Headings ---------- */
+h1, h2, h3, h5, .navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+  color: #a47148; /* Café latte color */
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #553f2f !important; /* Dark coffee brown */
+  border-bottom: none;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: #ffffff !important;
+}
+
+.navbar-toggler {
+  border-color: #f7c08a;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247,192,138,1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #ffffff !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #553f2f !important;
+  background-color: #fbcb9a !important;
+  border-radius: 4px;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-link:active,
+.nav-link.active {
+  color: #553f2f !important;
+  background-color: #d8a074 !important;
+  border-radius: 4px;
+}
+
+/* ---------- Button Styling ---------- */
+.btn-primary {
+  background-color: #8f633f;
+  border-color: #805938;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #fbcb9a;
+  border-color: #eab682;
+  color: #553f2f;
+}
+
+.btn-primary:active {
+  background-color: #d8a074;
+  border-color: #c08c65;
+  color: #553f2f;
+}
+
+/* ---------- Image Styling ---------- */
+.card-img-top {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+section#coffee .col-md-6,
+section#cakes .col-md-6,
+section#brunch .col-md-6 {
+  max-height: 360px;
+  overflow: hidden;
+}
+
+section#coffee img,
+section#cakes img,
+section#brunch img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Contact Info in Hero Section ---------- */
+#hero img {
+  height: 500px;
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  background-color: rgba(56, 42, 31, 0.7);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  max-width: 250px;
+  z-index: 10;
+}
+
+/* ---------- Text Blocks ---------- */
+.about-us-text {
+  font-size: 1.125rem;
+  color: #5c4631;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background-color: #553f2f !important;
+  color: #ffffff !important;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: auto;
+}
+
+footer h5 {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+footer address,
+footer p,
+footer ul li {
+  color: #ffffffcc;
+}
+
+footer a {
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+footer a.social-link img {
+  filter: brightness(100%);
+  transition: transform 0.3s ease;
+  vertical-align: middle;
+  border: none;
+}
+
+footer a.social-link:hover img {
+  transform: scale(1.2);
+}
+
+/* Footer Social Media Icons */
+.footer-get-in-touch a {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 8px;
+  background-color: transparent;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-get-in-touch a img {
+  display: block;
+  filter: brightness(1);
+  transition: transform 0.3s ease;
+}
+
+.footer-get-in-touch a:hover,
+.footer-get-in-touch a:focus,
+.footer-get-in-touch a:active {
+  background-color: #f7c08a;
+  transform: scale(1.2);
+}
+
+.footer-get-in-touch a:hover img,
+.footer-get-in-touch a:focus img,
+.footer-get-in-touch a:active img {
+  transform: scale(1.1);
+}
+
+/* Responsive Footer Text Alignment */
+@media (max-width: 767px) {
+  .footer-location,
+  .footer-get-in-touch,
+  .footer-contact-hours {
+    text-align: center !important;
+  }
+}
+
+/* Form Styling */
+form input,
+form textarea {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #a47148;
+  box-shadow: 0 0 5px rgba(164, 113, 72, 0.5);
+}
+
+/* ---------- Media Queries: Mobile Responsive Styles ---------- */
+@media (max-width: 576px) {
+  .hero-overlay {
+    display: block;               /* Ensure it is visible */
+    position: static;             /* Remove absolute positioning to avoid overlay issues */
+    background-color: rgba(56, 42, 31, 0.85); /* Slightly darker background for better text readability */
+    border-radius: 8px;
+    font-size: 0.8rem;            /* Slightly smaller font size */
+    line-height: 1.3;
+    max-width: 100%;              /* Width adapts to mobile screen */
+    margin: 10px auto;            /* Vertical margin and center horizontally */
+    padding: 8px 12px;            /* Padding inside the box */
+    color: #fff;                  /* Lighter text color for better contrast */
+    z-index: auto;                /* Remove z-index constraints */
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+
